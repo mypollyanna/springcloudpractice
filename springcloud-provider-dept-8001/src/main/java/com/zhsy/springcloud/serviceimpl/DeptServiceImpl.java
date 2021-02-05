@@ -5,11 +5,13 @@ import com.zhsy.springcloud.pojo.Dept;
 import com.zhsy.springcloud.service.DeptService;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class DeptServiceImpl implements DeptService {
 
+    @Resource
     private DeptMapper deptMapper;
 
     @Override
